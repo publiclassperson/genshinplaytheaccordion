@@ -32,7 +32,7 @@ function readMusic() {
     let musicArr = []
     var rootpath = files.cwd()
     var musicName = "score"
-    var suffix = ".js"
+    var suffix = ".txt"
 
     var targetMusicPath = rootpath + "/" + musicName + suffix;
     console.log(targetMusicPath)
