@@ -78,7 +78,10 @@ function parseMusic(musicStr) {
         let chars = musicSplit_2[0].split("");
         chars.forEach(item => {
             let place_index = musicChar.indexOf(item)
-            // console.log("place_index:"+place_index)
+            if(!charXY[place_index]){
+                console.log("place_indexand item:"+place_index+"XXX"+item+"chars:"+chars)
+                
+            }
             one_arr_time.arrs.push(charXY[place_index])
         })
         console.log("musicSplit_2:" + JSON.stringify(musicSplit_2))

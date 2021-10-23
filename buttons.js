@@ -97,7 +97,14 @@ button_exit.action.click(() => {
     exit()
 })
 
-
+//启用按键监听
+events.observeKey();
+//监听音量上键按下
+events.onKeyDown("volume_up", function(event){
+    if (execution) {
+        execution.getEngine().forceStop();
+    }
+});
 
 setInterval(() => {
     ui.run(() => {
